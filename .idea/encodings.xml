@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/bean/Request.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/bean/Response.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/bean/User.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/client/config/ClientRunStatus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/client/thread/ClientThread.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/client/window/FriendWindow.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/oraclewdp/client/window/LoginWindow.java" charset="GBK" />
+  </component>
+</project>
