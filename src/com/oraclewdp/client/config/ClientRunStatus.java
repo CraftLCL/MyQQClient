@@ -40,6 +40,19 @@ public class ClientRunStatus {
 	}
 	static {
 		//添加代码，加载Processing.properties文件到PROCESSINGNAMES属性中。
+
+		try {
+			PROCESSINGNAMES.load(ClientRunStatus.class.getResourceAsStream("Processing.properties"));
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		//添加代码，加载ServerAddress.properties文件到SERVERADDRESS属性中。
+		try {
+			SERVERADDRESS.load(ClientRunStatus.class.getResourceAsStream("ServerAddress.properties"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

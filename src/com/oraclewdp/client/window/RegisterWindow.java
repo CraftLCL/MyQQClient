@@ -116,6 +116,7 @@ public class RegisterWindow extends JFrame {
 		this.add(addressLabel);
 		this.add(this.address);
 		RegisterButtonMonitor rbm = new RegisterButtonMonitor(this);
+		//RegisterButtonMonitor rbm = new RegisterButtonMonitor();
 		JButton registerButton = new JButton("зЂВс");
 		registerButton.setActionCommand("1");
 		registerButton.addActionListener(rbm);
