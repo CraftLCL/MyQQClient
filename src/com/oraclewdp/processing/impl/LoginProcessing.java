@@ -16,7 +16,13 @@ public class LoginProcessing implements ClientProcessing {
 	public void processing(Response response, Socket socket, JFrame frame) {
 		if(response.getResponseCode()==Response.LOGIN_SUCCESS){
 			JOptionPane.showMessageDialog(null, "登录成功");
+
+			//这里存储了socket
 			ClientRunStatus.getInstance().setSocket(socket);
+
+
+
+
 			ClientRunStatus.getInstance().setLoginUser(response.getFromUser());
 			new FriendWindow(frame);
 		}else if (response.getResponseCode()==Response.LOGIN_PASSWORD_ERROR){

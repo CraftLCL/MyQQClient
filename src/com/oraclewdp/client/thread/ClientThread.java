@@ -48,7 +48,7 @@ public class ClientThread implements Runnable {
 
 					//由此可以得出com.oraclewdp.processing.impl.LoginProcessing必然是实现了ClientProcessing接口的一个类，所以才可以强转
 					clientProcessing.processing(response,socket,this.window);
-
+					//this.shutDown();
 
 				} catch (IOException e) {
 					e.printStackTrace();

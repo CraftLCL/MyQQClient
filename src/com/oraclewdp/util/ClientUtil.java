@@ -26,6 +26,9 @@ public class ClientUtil {
 	}
 	public static void refreshFriend(){
 		//添加代码，设置请求业务为“FriendList”，调用sendRequest()发送请求
-				
+		Request request=new Request();
+		request.setUser(ClientRunStatus.getInstance().getLoginUser());
+		request.setRequestServiceName("FriendList");
+		sendRequest(request);
 	}
 }

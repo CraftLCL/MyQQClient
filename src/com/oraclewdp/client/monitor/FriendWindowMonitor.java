@@ -1,5 +1,9 @@
 package com.oraclewdp.client.monitor;
 
+import com.oraclewdp.bean.Request;
+import com.oraclewdp.client.config.ClientRunStatus;
+import com.oraclewdp.util.ClientUtil;
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
@@ -14,7 +18,10 @@ public class FriendWindowMonitor implements WindowListener {
 
     @Override
     public void windowClosing(WindowEvent e) {
-
+        Request request = new Request();
+        request.setRequestServiceName("Exit");
+        request.setUser(ClientRunStatus.getInstance().getLoginUser());
+        ClientUtil.sendRequest(request);
     }
 
     @Override

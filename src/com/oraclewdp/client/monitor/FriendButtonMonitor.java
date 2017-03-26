@@ -19,7 +19,7 @@ public class FriendButtonMonitor implements ActionListener {
         if (friendId!=null&&friendId.equals(ClientRunStatus.getInstance().getLoginUser().getId()+"")){
             JOptionPane.showMessageDialog(null,"你不能添加你自己");
             return;
-        }else if (friendId!=null&&friendId.equals("")){
+        }else if (friendId!=null&&!friendId.equals("")){
             Request request=new Request();
             request.setRequestServiceName("AddFriend");
             User user=new User();
